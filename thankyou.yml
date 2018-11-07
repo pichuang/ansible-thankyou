@@ -8,4 +8,4 @@
           - "123"
           - "{{ item }}"
       with_inventory_hostnames:
-        - all
+        - all:!vcenter_app
