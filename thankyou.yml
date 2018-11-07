@@ -1,5 +1,5 @@
 ---
-- hosts: vmware-inventory
+- hosts: vcenter_app
   gather_facts: no
   connection: local
   tasks:
