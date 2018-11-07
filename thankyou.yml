@@ -1,0 +1,10 @@
+---
+- hosts: all
+  connection: local
+  gather_facts: no
+  tasks:
+    - debug:
+        msg:
+          - "{{ item }}"
+      with_inventory_hostnames:
+        - all
