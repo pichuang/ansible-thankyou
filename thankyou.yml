@@ -1,8 +1,11 @@
 ---
 - hosts: all
+  gather_facts: no
+  connection: local
   tasks:
     - debug:
         msg:
+          - "123"
           - "{{ item }}"
       with_inventory_hostnames:
         - all
