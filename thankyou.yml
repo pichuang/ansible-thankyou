@@ -1,5 +1,5 @@
 ---
-- hosts: vcenter
+- hosts: all
   gather_facts: no
   connection: local
   tasks:
@@ -8,4 +8,4 @@
           - "123"
           - "{{ item }}"
       with_inventory_hostnames:
-        - all
+        - vcenter
